@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog da Resenha | O Melhor do Caos Cotidiano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img class="logo" src="img/logo.png" alt="Logo Blog da Resenha">
+            <span class="nome-site">Blog da <strong>Resenha</strong></span>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="ativo">Home</a></li>
+                <li><a href="#noticias">Resenhas</a></li>
+                <li><a href="noticia01.html">O que é?</a></li>
+                <li><a href="#rodape">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-conteudo">
+            <span class="tag-destaque">🔥 Portal Oficial da Vergonha Alheia</span>
+            <h1>Onde cada momento constrangedor vira história</h1>
+            <p>Acompanhe as melhores histórias do dia a dia, falhas sociais épicas, pérolas da internet e tudo o que rola na roda de amigos.</p>
+            <a href="#noticias" class="btn-principal">Explorar Resenhas</a>
+        </div>
+    </section>
+
+    <main id="noticias">
+        <div class="cabecalho-secao">
+            <h2 class="titulo-noticias">As Novidades da Resenha</h2>
+            <div class="filtros">
+                <button class="filtro-btn ativo" data-categoria="todas">Todas</button>
+                <button class="filtro-btn" data-categoria="internet">Internet</button>
+                <button class="filtro-btn" data-categoria="cotidiano">Dia a Dia</button>
+                <button class="filtro-btn" data-categoria="escola">Escola</button>
+            </div>
+        </div>
+
+        <div class="noticias">
+            <!-- Card 1 -->
+            <article class="card" data-categoria="cotidiano">
+                <div class="card-badge">Guia Oficial</div>
+                <img class="card-img" src="img/capa.jpg" alt="O que é a resenha">
+                <div class="card-corpo">
+                    <h3>O que é a resenha e como ela nasce?</h3>
+                    <p>Entenda a ciência por trás das situações mais esquisitas, engraçadas e constrangedoras quando alguém tenta sair da zona de conforto.</p>
+                    <div class="card-rodape">
+                        <div class="botoes">
+                            <button class="botao-reacao botao-curtida" title="Curtir">👍 <span>14</span></button>
+                            <button class="botao-reacao botao-amei" title="Amei">❤️ <span>29</span></button>
+                        </div>
+                        <button class="link-leia btn-saiba-mais" data-id="0">Saiba mais →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card" data-categoria="internet">
+                <div class="card-badge">Viral</div>
+                <img class="card-img" src="img/logo.png" alt="Resenhas no GymTok">
+                <div class="card-corpo">
+                    <h3>As maiores resenhas do GymTok que viralizaram</h3>
+                    <p>De falhas na execução dos treinos a momentos inesperados no espelho da academia: confira o que movimentou a comunidade fitness.</p>
+                    <div class="card-rodape">
+                        <div class="botoes">
+                            <button class="botao-reacao botao-curtida" title="Curtir">👍 <span>42</span></button>
+                            <button class="botao-reacao botao-amei" title="Amei">❤️ <span>18</span></button>
+                        </div>
+                        <button class="link-leia btn-saiba-mais" data-id="1">Saiba mais →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card" data-categoria="escola">
+                <div class="card-badge">Clássico</div>
+                <img class="card-img" src="img/capa.jpg" alt="Chamou a professora de mãe">
+                <div class="card-corpo">
+                    <h3>O trauma coletivo de chamar o professor de "mãe" na sala</h3>
+                    <p>A sala inteira fica em silêncio absoluto por 3 segundos antes da risada geral. Especialistas explicam como superar esse evento canônico.</p>
+                    <div class="card-rodape">
+                        <div class="botoes">
+                            <button class="botao-reacao botao-curtida" title="Curtir">👍 <span>87</span></button>
+                            <button class="botao-reacao botao-amei" title="Amei">❤️ <span>65</span></button>
+                        </div>
+                        <button class="link-leia btn-saiba-mais" data-id="2">Saiba mais →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card" data-categoria="internet">
+                <div class="card-badge">Zap Zap</div>
+                <img class="card-img" src="img/logo.png" alt="Áudio no grupo errado">
+                <div class="card-corpo">
+                    <h3>Mandou áudio reclamando no grupo errado e apagou tarde demais</h3>
+                    <p>O botão "Apagar para todos" falhou na hora H e o print já estava circulando em três grupos diferentes da turma.</p>
+                    <div class="card-rodape">
+                        <div class="botoes">
+                            <button class="botao-reacao botao-curtida" title="Curtir">👍 <span>53</span></button>
+                            <button class="botao-reacao botao-amei" title="Amei">❤️ <span>31</span></button>
+                        </div>
+                        <button class="link-leia btn-saiba-mais" data-id="3">Saiba mais →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="card" data-categoria="cotidiano">
+                <div class="card-badge">Rua</div>
+                <img class="card-img" src="img/capa.jpg" alt="Acenar para desconhecido">
+                <div class="card-corpo">
+                    <h3>Acenou de volta achando que era para você, mas era para quem estava atrás</h3>
+                    <p>Para disfarçar a vergonha, o jovem fingiu que estava arrumando o cabelo e mudou de calçada imediatamente.</p>
+                    <div class="card-rodape">
+                        <div class="botoes">
+                            <button class="botao-reacao botao-curtida" title="Curtir">👍 <span>64</span></button>
+                            <button class="botao-reacao botao-amei" title="Amei">❤️ <span>49</span></button>
+                        </div>
+                        <button class="link-leia btn-saiba-mais" data-id="4">Saiba mais →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="card" data-categoria="escola">
+                <div class="card-badge">Apresentação</div>
+                <img class="card-img" src="img/logo.png" alt="Trabalho em grupo">
+                <div class="card-corpo">
+                    <h3>"Minha parte era só passar o slide": a arte de improvisar no seminário</h3>
+                    <p>Quando o colega que fez o trabalho falta no dia da apresentação e o grupo precisa ler o slide como se fosse a primeira vez.</p>
+                    <div class="card-rodape">
+                        <div class="botoes">
+                            <button class="botao-reacao botao-curtida" title="Curtir">👍 <span>95</span></button>
+                            <button class="botao-reacao botao-amei" title="Amei">❤️ <span>72</span></button>
+                        </div>
+                        <button class="link-leia btn-saiba-mais" data-id="5">Saiba mais →</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- JANELA MODAL (NOTÍCIA DETALHADA) -->
+    <div id="modal-noticia" class="modal-overlay">
+        <div class="modal-caixa">
+            <button id="fechar-modal" class="modal-fechar" title="Fechar">×</button>
+            <img id="modal-img" src="" alt="Imagem da notícia">
+            <div class="modal-conteudo">
+                <span id="modal-tag" class="tag-destaque">Categoria</span>
+                <h2 id="modal-titulo">Título da Notícia</h2>
+                <div id="modal-texto"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="rodape">
+        <div class="footer-conteudo">
+            <p class="footer-titulo">Blog da Resenha</p>
+            <p class="footer-sub">Projeto de Educação Digital — 1º Ano do Ensino Médio</p>
+            <p class="footer-autor">Desenvolvido por <strong>Luis Totty</strong> © 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. BANCO DE DADOS DAS NOTÍCIAS DETALHADAS
+        const noticiasCompletas = [
+            {
+                tag: "Guia Oficial",
+                imagem: "img/capa.jpg",
+                titulo: "O que é a resenha e como ela nasce?",
+                texto: `
+                    <p>Resenha é nada mais do que aquelas situações totalmente fora do roteiro que acontecem no dia a dia — podendo ser engraçadas, constrangedoras ou simplesmente esquisitas.</p>
+                    <p>Tudo começa quando alguém tenta sair da sua zona de conforto social: mandar uma piada na hora errada, tentar fazer graça na frente da turma ou puxar um assunto aleatório. Quando a tentativa falha, o resultado vira história para o grupo inteiro rir por semanas.</p>
+                    <p>Aqui no <strong>Blog da Resenha</strong>, registramos esses momentos épicos para provar que ninguém está sozinho na arte de passar vergonha!</p>
+                `
+            },
+            {
+                tag: "Viral • Internet",
+                imagem: "img/logo.png",
+                titulo: "As maiores resenhas do GymTok que viralizaram",
+                texto: `
+                    <p>O universo fitness nas redes sociais virou uma fábrica oficial de resenhas. Entre vídeos motivacionais e treinos pesados, o que realmente prende a atenção da galera são os imprevistos.</p>
+                    <p>Desde pessoas tentando levantar mais peso do que aguentam na frente do espelho até alguém derrubando a garrafinha de água bem na hora em que a academia inteira está em silêncio, o GymTok mostra que o treino de abdômen muitas vezes acontece de tanto rir.</p>
+                    <p>A regra da internet é clara: gravou o treino, correu o risco de virar meme nacional.</p>
+                `
+            },
+            {
+                tag: "Clássico • Escola",
+                imagem: "img/capa.jpg",
+                titulo: "O trauma coletivo de chamar o professor de 'mãe' na sala",
+                texto: `
+                    <p>Estava tudo normal na aula de matemática. Você levanta a mão para tirar uma dúvida simples, abre a boca com toda a confiança do mundo e solta um sonoro: <em>"Ô mãe, explica de novo?"</em>.</p>
+                    <p>Nesse exato milésimo de segundo, o tempo congela. O professor olha por cima dos óculos, o colega do fundo começa a bater na carteira e você só pensa em pedir transferência de escola.</p>
+                    <p><strong>Dica de sobrevivência:</strong> Nunca tente explicar. Apenas ria junto e aceite que esse será seu apelido até o fim do bimestre.</p>
+                `
+            },
+            {
+                tag: "Zap Zap • Internet",
+                imagem: "img/logo.png",
+                titulo: "Mandou áudio reclamando no grupo errado e apagou tarde demais",
+                texto: `
+                    <p>Poucas coisas aceleram mais o coração humano do que ver duas setinhas azuis em um áudio de 40 segundos enviado no grupo errado.</p>
+                    <p>O incidente aconteceu logo após a saída da aula, quando um aluno tentou comentar sobre a prova no grupo dos amigos, mas acabou mandando direto no grupo oficial da sala. Ele ainda tentou apertar "Apagar para todos", mas clicou em "Apagar para mim" no desespero.</p>
+                    <p>Resultado: três pessoas já tinham baixado o áudio e transformado em figurinha animada antes mesmo do recreio acabar.</p>
+                `
+            },
+            {
+                tag: "Rua • Dia a Dia",
+                imagem: "img/capa.jpg",
+                titulo: "Acenou de volta achando que era para você, mas era para quem estava atrás",
+                texto: `
+                    <p>Você está andando tranquilamente pela calçada quando vê alguém do outro lado da rua sorrindo e acenando empolgado na sua direção. Por educação, você abre um sorrisão e levanta a mão de volta.</p>
+                    <p>Dois segundos depois, você percebe que a pessoa estava olhando para alguém que vinha logo atrás de você. Para salvar o resto da dignidade, o cérebro ativa o modo de emergência: transformar o aceno em uma ajeitada no cabelo ou fingir que estava espantando um mosquito.</p>
+                    <p>Um clássico absoluto da resenha urbana.</p>
+                `
+            },
+            {
+                tag: "Apresentação • Escola",
+                imagem: "img/logo.png",
+                titulo: "'Minha parte era só passar o slide': a arte de improvisar no seminário",
+                texto: `
+                    <p>Todo grupo escolar tem aquela divisão clássica de tarefas: um pesquisa, um monta os slides e o terceiro fica responsável por "apresentar a conclusão".</p>
+                    <p>O problema começa quando o integrante que sabia todo o conteúdo falta no dia da apresentação. Lá na frente da lousa, sobra para o restante do grupo ler os tópicos com cara de surpresa, como se estivessem descobrindo o assunto naquela exata hora.</p>
+                    <p>No final, o famoso <em>"É isso, professor, alguma dúvida?"</em> encerra uma das maiores resenhas da sala de aula.</p>
+                `
+            }
+        ];
+
+        // 2. ABRIR E FECHAR O MODAL
+        const modal = document.getElementById('modal-noticia');
+        const btnFechar = document.getElementById('fechar-modal');
+        const botoesSaibaMais = document.querySelectorAll('.btn-saiba-mais');
+
+        botoesSaibaMais.forEach(botao => {
+            botao.addEventListener('click', () => {
+                const id = botao.getAttribute('data-id');
+                const noticia = noticiasCompletas[id];
+
+                document.getElementById('modal-img').src = noticia.imagem;
+                document.getElementById('modal-tag').textContent = noticia.tag;
+                document.getElementById('modal-titulo').textContent = noticia.titulo;
+                document.getElementById('modal-texto').innerHTML = noticia.texto;
+
+                modal.classList.add('aberto');
+                document.body.style.overflow = 'hidden'; // Trava a rolagem do fundo
+            });
+        });
+
+        function fecharModal() {
+            modal.classList.remove('aberto');
+            document.body.style.overflow = 'auto';
+        }
+
+        btnFechar.addEventListener('click', fecharModal);
+
+        // Fecha ao clicar fora da caixa branca/escura
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                fecharModal();
+            }
+        });
+
+        // Fecha ao apertar a tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('aberto')) {
+                fecharModal();
+            }
+        });
+
+        // 3. SISTEMA DE CURTIDAS E AMEI
+        const botoesReacao = document.querySelectorAll('.botao-reacao');
+
+        botoesReacao.forEach(botao => {
+            botao.addEventListener('click', (event) => {
+                const btnAtual = event.currentTarget;
+                const contador = btnAtual.querySelector('span');
+                let valor = parseInt(contador.textContent);
+
+                if (btnAtual.classList.contains('clicado')) {
+                    contador.textContent = valor - 1;
+                    btnAtual.classList.remove('clicado');
+                } else {
+                    contador.textContent = valor + 1;
+                    btnAtual.classList.add('clicado');
+                }
+            });
+        });
+
+        // 4. FILTRO DE CATEGORIAS
+        const botoesFiltro = document.querySelectorAll('.filtro-btn');
+        const cards = document.querySelectorAll('.card');
+
+        botoesFiltro.forEach(btn => {
+            btn.addEventListener('click', () => {
+                botoesFiltro.forEach(b => b.classList.remove('ativo'));
+                btn.classList.add('ativo');
+
+                const categoria = btn.getAttribute('data-categoria');
+
+                cards.forEach(card => {
+                    if (categoria === 'todas' || card.getAttribute('data-categoria') === categoria) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
